@@ -1,0 +1,17 @@
+# ===== 数据集根路径 =====
+# 方式1：绝对路径（最稳妥，推荐先这样跑通）
+path: C:/Users/ht/Documents/WorkSpace/ultralytics/datasets/test
+# 方式2：相对路径（相对 data.yaml 所在目录），二选一
+# path: ./datasets/my_dataset
+
+# ===== 训练集 / 验证集 / 测试集 =====
+# 写相对 path 的子路径即可
+train: images/train
+val: images/val
+# test: images/test   # 没有测试集就注释掉，不写也行
+
+# ===== 类别信息 =====
+nc: 2
+names:
+  0: screw
+  1: screw_hole
